@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Storage</title>
+</head>
+<body>
+	<div id="name"></div>
+	<div id="nam"></div>
+<script type="text/javascript">
+	// localStorage: It keeps the data in memory till the cache memory is manually cleared.
+	if(typeof(Storage) != 'undefined'){
+		// Store an item
+		localStorage.setItem('name', 'Neil Castellino');
+
+		// Get an item
+		console.log(localStorage.name);
+
+		// Remove an item
+		localStorage.removeItem('name');
+
+		if(localStorage.name){
+			document.getElementById('name').innerHTML=localStorage.getItem('name');
+		}else{
+			document.getElementById('name').innerHTML='No Name Found';
+		}
+	}else{
+		console.log('localStorage not supported');
+	}
+
+	// sessionStorage: It keeps the data only till the browser is active.
+	if(typeof(Storage) != 'undefined'){
+		// Store an item
+		sessionStorage.setItem('nam', 'Neil Castellino');
+
+		// Get an item
+		console.log(sessionStorage.nam);
+
+		// Remove an item
+		sessionStorage.removeItem('nam');
+
+		if(sessionStorage.nam){
+			document.getElementById('nam').innerHTML=sessionStorage.getItem('nam');
+		}else{
+			document.getElementById('nam').innerHTML='No Name Found';
+		}
+	}else{
+		console.log('sessionStorage not supported');
+	}
+</script>
+</body>
+</html>
