@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%);
+}
+h1{
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	color: #666666;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+#container{
+	width: 635px;
+	position: relative;
+	margin: 100px auto 0 auto;
+}
+.slider{
+	height: 332px;
+}
+.slider img{
+	padding: 15px;
+	border: solid #ccc 1px;
+	background-color: #eee;
+}
+#nav{
+	list-style-type: none;
+	z-index: 150;
+}
+#nav li a{
+	display: block;
+	width: 58px;
+	height: 102px;
+	text-indent: -9999px;
+	outline: none;
+}
+#prev a{
+	background: url(../img/a11.png);
+	width: 58px;
+	height: 102px;
+	position: absolute;
+	top:240px;
+	left: -70px;
+}
+#next a{
+	background: url(../img/a12.png);
+	width: 58px;
+	height: 102px;
+	position: absolute;
+	top:240px;
+	right: -110px;
+}
+#next a:hover{
+	background: url(../img/a22.png);
+}
+#prev a:hover{
+	background: url(../img/a21.png);
+}
