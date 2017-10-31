@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery | DOM Manipulations</title>
+	<script src="js/jquery.min.js"></script>
+	<style type="text/css">
+		.red{
+			color: red;
+		}
+		.green{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<div id="d1"></div>
+	<div id="d2" class="green"></div>
+	<input type="text" id="i1">
+	<br><br>
+	<ul id="list1">
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+	</ul>
+	<br><br>
+	<button id="myBtn">Click</button>
+	<script>
+		$(document).ready(function(){
+			$('#d1').text('Hello');
+			$('#d2').html('<h1>Hello</h1>');
+			$('#i1').val('Hello');
+			// alert($('#d1').text());
+			$('#d1').attr('class','something');
+			$('#d1').removeAttr('class');
+			$('#list1').append('<li>Last Item</li>');
+			$('#list1').prepend('<li>First Item</li>');
+			$('#list1').before('<p>Before List</p>');
+			$('#list1').after('<p>After List</p>');
+			// $('#list1').remove();
+			// $('#list1').empty();
+			$('#d1').addClass('red');
+			$('#d2').removeClass('green');
+			$('#myBtn').click(function(){
+				$('#d2').toggleClass('green');
+			});
+
+			$('#d1').css('background', 'pink');
+			$('#d1').width('150');
+			$('#d1').height('50');
+			// $('#d2').replaceWith('<h2>Replace</h2>');
+			$('li').unwrap();
+			$('#d2').wrap('<div></div>');
+		});
+	</script>
+</body>
+</html>
