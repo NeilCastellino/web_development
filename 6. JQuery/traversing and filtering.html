@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery | Traversing and Filtering</title>
+	<script src="js/jquery.min.js"></script>
+	<style type="text/css">
+		.container *{
+			display: block;
+			border: 2px solid grey;
+			padding: 5px;
+			margin: 15px;
+			color: grey;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div> div [great-grandparent]
+			<ul> ul[grandparent]
+				<li> li [parent]
+					<span>span</span>
+				</li>
+			</ul>
+		</div>
+		<div> div [grandparent]
+			<p> p[parent]
+				<span>span</span>
+			</p>
+		</div>
+		<div> div [parent]
+			<p>p</p>
+			<span>span</span>
+			<h2>h2</h2>
+			<h3>h3</h3>
+			<p>p</p>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			// Direct parents
+			// $('span').parent().css({'color': 'red', 'border': '2px red solid'});
+
+			// All Parents
+			// $('span').parents().css({'color': 'red', 'border': '2px red solid'});
+
+			// Only ul parents
+			// $('span').parents('ul').css({'color': 'red', 'border': '2px red solid'});
+
+			// Parents until div
+			// $('span').parentsUntil('div').css({'color': 'red', 'border': '2px red solid'});
+
+			// Children
+			// $('div').children().css({'color': 'red', 'border': '2px red solid'});
+
+			// Find
+			// $('div').find('p').css({'color': 'red', 'border': '2px red solid'});
+
+			// Siblings
+			// $('h2').siblings('p').css({'color': 'red', 'border': '2px red solid'});
+
+			// Next
+			// $('h2').next().css({'color': 'red', 'border': '2px red solid'});
+
+			// Next All
+			// $('h2').nextAll().css({'color': 'red', 'border': '2px red solid'});
+
+			// Next until
+			// $('p').nextUntil('h3').css({'color': 'red', 'border': '2px red solid'});
+
+			// Previous
+			// $('h2').prev().css({'color': 'red', 'border': '2px red solid'});
+
+			// Next All
+			// $('h2').prevAll().css({'color': 'red', 'border': '2px red solid'});
+
+			// Next until
+			// $('p').prevUntil('span').css({'color': 'red', 'border': '2px red solid'});
+
+			// First
+			// $('p').first().css({'color': 'red', 'border': '2px red solid'});
+
+			// Last
+			$('p').last().css({'color': 'red', 'border': '2px red solid'});
+		});
+	</script>
+</body>
+</html>

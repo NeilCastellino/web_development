@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Effects and Animations</title>
+	<script src="js/jquery.min.js"></script>
+	<style type="text/css">
+		.square, .square2{
+			width: 100px;
+			height: 100px;
+			background: black;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<button id="btnHide">Hide</button>
+	<button id="btnShow">Show</button>
+	<button id="btnTog">Toggle</button>
+	<button id="fadeOut">fadeOut</button>
+	<button id="fadeIn">fadeIn</button>
+	<button id="fadeTog">fadeTog</button>
+	<button id="slideUp">slideUp</button>
+	<button id="slideDown">slideDown</button>
+	<button id="slideTog">slideTog</button>
+	<button id="btnStop">Stop</button>
+	<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim gravida diam accumsan porta. Curabitur eu vestibulum ligula, hendrerit porta dui. Donec pharetra ligula at nibh egestas, quis convallis lacus fermentum. Nulla viverra fermentum sodales. Curabitur euismod volutpat mollis. Sed sit amet purus justo.</p>
+	<br><br>
+
+	<button id="anim">Animate</button>
+
+	<br><br>
+
+	<div class="square"></div>
+
+	<br><br>
+
+	<button id="anim2">Animate</button>
+
+	<br><br>
+
+	<div class="square2"></div>
+
+	<script>
+		$(document).ready(function(){
+			$('#btnHide').click(function(){
+				$('.p1').hide();
+			});
+			$('#btnShow').click(function(){
+				$('.p1').show();
+			});
+			$('#btnTog').click(function(){
+				$('.p1').toggle();
+			});
+			$('#fadeOut').click(function(){
+				$('.p1').fadeOut(2000);
+			});
+			$('#fadeIn').click(function(){
+				$('.p1').fadeIn(2000);
+			});
+			$('#fadeTog').click(function(){
+				$('.p1').fadeToggle(2000);
+			});
+			$('#slideUp').click(function(){
+				$('.p1').slideUp(1000);
+			});
+			$('#slideDown').click(function(){
+				$('.p1').slideDown(1000);
+			});
+			$('#slideTog').click(function(){
+				$('.p1').slideToggle(1000);
+			});
+			$('#btnStop').click(function(){
+				$('.p1').stop();
+			});
+			$('#anim').click(function(){
+				$('.square').animate({
+					left: '+=100px',
+					opacity: '0.5',
+					height: '+=100px',
+					width: '+=100px'
+				}, 'fast');
+			});
+
+			$('#anim2').click(function(){
+				var div = $('.square2');
+				div.animate({height: '300px', opacity: '0.4'}, 'slow');
+				div.animate({width: '300px', opacity: '0.8'}, 'slow');
+				div.animate({height: '100px', opacity: '0.4'}, 'slow');
+				div.animate({width: '100px', opacity: '0.8'}, 'slow');
+			});
+		});
+	</script>
+</body>
+</html>
