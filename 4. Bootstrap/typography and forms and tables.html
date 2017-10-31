@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Typography, Forms and Tables</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<h1>Hello <small>Everyone</small></h1>
+
+		<p class="lead">Lorem ipsum dolor sit amet, <mark>consectetur</mark> <del>adipiscing</del> elit. Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.</p>
+
+		<h1>Alignment</h1>
+		<p class="text-left">elit. Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.</p>
+		<p class="text-right">elit. Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.</p>
+		<p class="text-center">elit. Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.</p>
+		<p class="text-justify">elit. Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.</p>
+		<p class="text-nowrap">elit. Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.</p>
+
+		<h1>Transformation Classes</h1>
+
+		<p class="text-lowercase">HELLO</p>
+		<p class="text-uppercase">hello</p>
+		<p class="text-capitalize">hello</p>
+
+		<h1>Blockquote</h1>
+		
+		<blockquote>
+			<p>Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.</p>
+		</blockquote>
+
+		<blockquote class="blockquote-reverse">
+			<p>Sed rutrum lacus in malesuada interdum. Phasellus non nisl eu quam semper dictum.</p>
+		</blockquote>
+
+		<h1>Lists</h1>
+
+		<ul class="list-unstyled">
+			<li>List item</li>
+			<li>List item</li>
+			<li>
+				<ul>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ul>
+			</li>
+			<li>List item</li>
+			<li>List item</li>
+			<li>List item</li>
+		</ul>		
+
+		<h1>Tables</h1>
+
+		<table class="table table-striped table-hover table-condensed">
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+			<tr class="success">
+				<td>Neil</td>
+				<td>n@neil.com</td>
+			</tr>
+			<tr class="danger">
+				<td>Neil</td>
+				<td>n@neil.com</td>
+			</tr>
+			<tr>
+				<td>Neil</td>
+				<td>n@neil.com</td>
+			</tr>
+			<tr>
+				<td>Neil</td>
+				<td>n@neil.com</td>
+			</tr>
+		</table>
+
+		<h1>Forms</h1>
+
+		<form>
+			<div class="form-group">
+				<label>Name</label>
+				<input type="text" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Email</label>
+				<input type="email" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Password</label>
+				<input type="password" class="form-control">
+			</div>
+			
+			<div class="form-group">
+				<label>Selection</label>
+				<select class="form-control">
+					<option value="0">Option 0</option>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+				</select>
+			</div>
+			
+			<div class="checkbox">
+				<label><input type="checkbox">Checkbox</label>
+			</div>
+
+			<input type="submit" value="submit" class="btn btn-default">
+		</form>
+
+		<br><br><br>
+		<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
