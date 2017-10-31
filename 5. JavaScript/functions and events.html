@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript | Functions and Events</title>
+</head>
+<body>
+	<button onclick="getDate()">Get Date</button>
+	<h1 id="show-date"></h1>
+	<form id="myForm">
+		<div>
+			<label>Name</label>
+			<input type="text"  id="name">
+		</div>
+		<div>
+			<label>Email</label>
+			<input type="text" id="email">
+		</div>
+		<input type="submit" value="Submit">
+	</form>
+	<script type="text/javascript">
+		// function sayHello(name = 'Hello'){
+		// 	alert('Hello ' + name);
+		// }
+		// sayHello();
+
+		// function getSum(a,b){
+		// 	return a+b;
+		// }
+		// var sum = getSum(1,2);
+		// alert('sum = '+ sum);
+
+		function getDate(){
+			var d = new Date();
+			document.getElementById('show-date').innerHTML = d.getDate();
+			// alert(d.getDate());
+		}
+
+		function formSubmit(e){
+			e.preventDefault();
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			console.log('Thanks '+name+'. Your form has been Submitted through '+email);
+		}
+
+		document.getElementById('myForm').addEventListener('submit', formSubmit, false);
+	</script>
+</body>
+</html>

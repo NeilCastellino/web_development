@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript | Variables, Arrays and Objects</title>
+</head>
+<body>
+	<div id="test"></div>
+	<script type="text/javascript">
+		// Output
+		// console.log('Hello World');
+		// document.write('Hello World');
+		// alert('Hello World')
+		// document.getElementById('test').innerHTML = 'Hello World';
+
+		// Variables
+		var x = 5;
+		var y = 10;
+		// console.log(x+y);
+		var person = 'Neil';
+		// console.log('My name is ' + person);
+
+		// Arrays
+		// var animals = ['lion', 'cat', 'dog', 'tiger'];
+		// console.log(animals);
+		var animals = new Array('dog', 'cat', 'horse');
+		animals.push('pig');
+		// console.log(animals.length);
+		// console.log(animals.sort());
+		// console.log(animals);
+
+		var person = [];
+		person['name'] = 'Neil';
+		person['age'] = 22;
+		person['city'] = 'Mumbai';
+		// console.log(person);
+
+		var car = {make: 'Ford', model: 'Mustang', year: 1964};
+		// console.log(car.make);
+
+		var cars = [
+		{
+			make: 'Ford', 
+			model: 'Mustang', 
+			year: 1964
+		},
+		{
+			make: 'Chevy', 
+			model: 'Impala', 
+			year: 1978
+		},
+		{
+			make: 'Toyota', 
+			model: 'Camry', 
+			year: 2015
+		}
+		];
+		console.log(cars[1].model);
+	</script>
+</body>
+</html>
